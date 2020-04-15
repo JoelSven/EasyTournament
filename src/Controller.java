@@ -6,6 +6,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.TextField;
 import javafx.stage.*;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 
@@ -20,6 +21,8 @@ public class Controller {
     private ComboBox<Config> cbConfig;
     @FXML
     private TextField tfAmountOfTeams;
+    @FXML
+    private ListView listOverview;
 
     @FXML
     public void setConfigGUI(ActionEvent event) throws IOException {
@@ -61,6 +64,7 @@ public class Controller {
     public void handleGroupStageBox(ActionEvent actionEvent){
         if(cbGroupStage.isSelected()) {
             tournament.groupStage();
+
         }
     }
 

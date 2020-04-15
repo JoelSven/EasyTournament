@@ -62,13 +62,13 @@
             </VBox>
          </children>
       </AnchorPane>
-      <ListView layoutX="238.0" layoutY="59.0" prefHeight="340.0" prefWidth="480.0" style="-fx-background-color: #B0C4DE#B0C4DE;" />
-      <Button layoutX="527.0" layoutY="493.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="151.0" style="-fx-background-color: #4169E1#4169E1;" text="Lets Play" />
-      <Label layoutX="236.0" layoutY="40.0" prefHeight="19.0" prefWidth="88.0" text="Overview" textFill="WHITE">
+      <ListView fx:id="listOverview" layoutX="238.0" layoutY="59.0" prefHeight="340.0" prefWidth="480.0" style="-fx-background-color: #B0C4DE#B0C4DE;" />
+      <Button fx:id="btnLetsPlay" layoutX="527.0" layoutY="493.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="151.0" style="-fx-background-color: #4169E1#4169E1;" text="Lets Play" />
+      <Label fx:id="lblOverview" layoutX="236.0" layoutY="40.0" prefHeight="19.0" prefWidth="88.0" text="Overview" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="280.0" layoutY="493.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="151.0" style="-fx-background-color: #4169E1#4169E1;" text="Back" />
+      <Button fx:id="btnBack" layoutX="280.0" layoutY="493.0" mnemonicParsing="false" onAction="#setTeamsGUI" prefHeight="50.0" prefWidth="151.0" style="-fx-background-color: #4169E1#4169E1;" text="Back" />
    </children>
 </AnchorPane>
