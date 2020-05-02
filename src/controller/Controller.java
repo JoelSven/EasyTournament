@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -8,6 +9,8 @@ import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.input.*;
 import javafx.stage.*;
 import model.*;
 
@@ -19,7 +22,7 @@ import java.util.ArrayList;
  * the view and the model classes
  * @author Andreas von Uthmann
  */
-public class Controller {
+public class Controller  {
 
     private Tournament tournament = new Tournament(this);
     private GroupStageController groupStageController = new GroupStageController(this);
@@ -43,6 +46,12 @@ public class Controller {
     private ListView listOverview = new ListView();
     @FXML
     private ListView listTeamsPlayer = new ListView();
+
+
+
+
+
+
 
     private TableColumn <Player, String> column = new TableColumn("Players");
     private final TableColumn column1 = new TableColumn("Team 1");
@@ -269,4 +278,11 @@ public class Controller {
             alert1.showAndWait();
         }
     }
+
+
+
+
+
+
+
 }

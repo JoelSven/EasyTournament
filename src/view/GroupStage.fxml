@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TableView fx:id="tblGroupStage" editable="true" layoutX="120.0" layoutY="350.0" prefHeight="255.0" prefWidth="661.0">
+        <columns>
+          <TableColumn fx:id="colPosition" prefWidth="63.0" text="Position" />
+          <TableColumn fx:id="colTeams" prefWidth="191.0" text="Team" />
+            <TableColumn fx:id="colWins" prefWidth="60.0" text="Wins" />
+            <TableColumn fx:id="colLosses" prefWidth="121.0" text="Losses" />
+            <TableColumn fx:id="colDraws" prefWidth="102.0" text="draws" />
+            <TableColumn fx:id="colPoints" prefWidth="123.0" text="Points" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
