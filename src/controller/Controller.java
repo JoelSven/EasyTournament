@@ -120,6 +120,22 @@ public class Controller {
     private Label lblQfHome = new Label();
     @FXML
     private Label lblQf2 = new Label();
+    @FXML
+    private Label lblQualGame1Home = new Label();
+    @FXML
+    private Label lblQualGame1Away = new Label();
+    @FXML
+    private Label lblQualGame2Home = new Label();
+    @FXML
+    private Label lblQualGame2Away = new Label();
+    @FXML
+    private Label lblQf3Home = new Label();
+    @FXML
+    private Label lblQf3Away = new Label();
+    @FXML
+    private Label lblQf4Home = new Label();
+    @FXML
+    private Label lblQf4Away = new Label();
 
 
 
@@ -286,28 +302,28 @@ public class Controller {
 
     }
 
-    public void qualificationGameOne(){
+    public void qualificationGameOneForNineAndTen(){
         int scoreQual1 = Integer.parseInt(tfQual1.getText());
         int scoreQual2 = Integer.parseInt(tfQual2.getText());
 
         if (scoreQual1 > scoreQual2){
             tfTeam5.setPromptText("Team 5");
-            lblQfHome.setText("Team 5");
+            lblQf3Home.setText("Team 5");
         } else {
             tfTeam5.setPromptText("Team 6");
-            lblQfHome.setText("Team 6");
+            lblQf3Home.setText("Team 6");
         }
     }
-    public void qualificationGameTwo(){
+    public void qualificationGameTwoForTen(){
         int scoreQual1 = Integer.parseInt(tfQual3.getText());
         int scoreQual2 = Integer.parseInt(tfQual4.getText());
 
         if (scoreQual1 > scoreQual2){
             tfTeam8.setPromptText("Team 9");
-            lblQf2.setText("Team 9");
+            lblQf4Away.setText("Team 9");
         } else {
             tfTeam8.setPromptText("Team 10");
-            lblQf2.setText("Team 10");
+            lblQf4Away.setText("Team 10");
         }
     }
     public void gameOne(){
@@ -339,11 +355,11 @@ public class Controller {
         int score6 = Integer.parseInt(tfTeam6.getText());
 
         if (score5 > score6){
-            tfSemifinal2Home.setPromptText("Team 5");
-            lblSemifinal2Home.setText("Team 5");
+            tfSemifinal2Home.setPromptText(lblQf3Home.getText());
+            lblSemifinal2Home.setText(lblQf3Home.getText());
         } else{
-            tfSemifinal2Home.setPromptText("Team 6");
-            lblSemifinal2Home.setText("Team 6");
+            tfSemifinal2Home.setPromptText(lblQf3Away.getText());
+            lblSemifinal2Home.setText(lblQf3Away.getText());
         }
     }
 
@@ -352,11 +368,11 @@ public class Controller {
         int score8 = Integer.parseInt(tfTeam8.getText());
 
         if (score7 > score8){
-            tfSemifinal2Away.setPromptText("Team 7");
-            lblSemifinal2Away.setText("Team 7");
+            tfSemifinal2Away.setPromptText(lblQf4Home.getText());
+            lblSemifinal2Away.setText(lblQf4Home.getText());
         } else{
-            tfSemifinal2Away.setPromptText("Team 8");
-            lblSemifinal2Away.setText("Team 8");
+            tfSemifinal2Away.setPromptText(lblQf4Away.getText());
+            lblSemifinal2Away.setText(lblQf4Away.getText());
         }
     }
     public void gameFive(){
