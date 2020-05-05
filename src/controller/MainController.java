@@ -59,6 +59,10 @@ public class MainController {
             Scene playerScene = new Scene(playerLoader.load());
             sendSelfToControllers(playerLoader);
 
+            FXMLLoader playerLoader = new FXMLLoader(getClass().getResource("../view/.fxml"));
+            Scene playerScene = new Scene(playerLoader.load());
+            sendSelfToControllers(playerLoader);
+
             scenes.put(ScenesEnum.FirstPage, firstPageScene);
             scenes.put(ScenesEnum.Team, teamScene);
             scenes.put(ScenesEnum.Player, playerScene);
