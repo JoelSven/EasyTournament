@@ -42,9 +42,8 @@ public class GroupStageController extends SceneControllerParent {
 
 
         @FXML
-        public void setGroupStageGUI(ActionEvent event, AmountOfTeams selectedItem) throws IOException {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("../view/GroupStage.fxml"));
+        public void setGroupStageGUI(AmountOfTeams selectedItem) throws IOException {
+
             initTable();
             switch (selectedItem) {
                 case Three:
@@ -67,13 +66,7 @@ public class GroupStageController extends SceneControllerParent {
                 case Ten:
                     break;
             }
-            //loader.setLocation(getClass().getResource("../view/FirstPage.fxml"));
-            Parent playerGUI = loader.load();
-            // Controller controller = loader.getController();
-            Scene playerScene = new Scene(playerGUI);
-            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            window.setScene(playerScene);
-            window.show();
+
 
         }
         //Groupstage

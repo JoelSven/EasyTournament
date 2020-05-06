@@ -88,8 +88,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <CheckBox layoutX="441.0" layoutY="149.0" mnemonicParsing="false" text="Group Stage" textFill="WHITE" />
-      <CheckBox layoutX="441.0" layoutY="180.0" mnemonicParsing="false" text="Play-Offs" textFill="WHITE" />
+      <CheckBox fx:id="cbGroupStage" layoutX="441.0" layoutY="149.0" mnemonicParsing="false" text="Group Stage" textFill="WHITE" />
+      <CheckBox fx:id="cbPlayOffs" layoutX="441.0" layoutY="180.0" mnemonicParsing="false" text="Play-Offs" textFill="WHITE" />
       <Button fx:id="btnRemovePlayerTeams" layoutX="441.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #3b3f41#3b3f41;" text="Remove Player" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
