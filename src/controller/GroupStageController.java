@@ -43,7 +43,7 @@ public class GroupStageController extends SceneControllerParent {
 
         @FXML
         public void setGroupStageGUI(AmountOfTeams selectedItem) throws IOException {
-
+            //
             initTable();
             switch (selectedItem) {
                 case Three:
