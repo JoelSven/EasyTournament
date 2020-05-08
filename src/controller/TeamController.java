@@ -90,6 +90,7 @@ public class TeamController extends SceneControllerParent {
 
             System.out.println(amountTeams);
             //amountTeams=getAmountTeams();
+            
 
             mainController.setAmountOfTeams(amountOfTeams);
 
