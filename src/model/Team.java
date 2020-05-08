@@ -8,6 +8,7 @@ import java.util.ArrayList;
  */
 public class Team {
 
+    private String amount;
     private String name;
     private String player1;
     private String player2;

@@ -9,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.*;
 
+import java.util.ArrayList;
+
 public class TeamController extends SceneControllerParent {
 
     private AmountOfTeams amountOfTeams;
@@ -30,6 +32,10 @@ public class TeamController extends SceneControllerParent {
     private ChoiceBox<String> cbSelectTeams = new ChoiceBox();
     @FXML
     private ChoiceBox<String> cbPlacingOnTable = new ChoiceBox();
+
+    private int amountTeams;
+
+    private TeamsToGroupStage teamsToGroupStage;
 
     private ObservableList<String> tableContent = FXCollections.observableArrayList();
 
@@ -68,10 +74,27 @@ public class TeamController extends SceneControllerParent {
         mainController.setScene(ScenesEnum.Player);
     }
 
+    public int getTheTeams(){
+        return amountTeams;
+    }
+
+
+
+
+
+
     @FXML
     public void startTournamentClicked(ActionEvent actionEvent) {
         if (cbGroupStage.isSelected()) {
             mainController.setScene(ScenesEnum.GroupStage);
+
+            System.out.println(amountTeams);
+            //amountTeams=getAmountTeams();
+
+            mainController.setAmountOfTeams(amountOfTeams);
+
+            System.out.println(amountTeams);
+
         } else if (cbPlayoffs.isSelected()) {
             switch (cbTeams.getSelectionModel().getSelectedItem()) {
                 case Three:
@@ -129,12 +152,16 @@ public class TeamController extends SceneControllerParent {
             cbPlayers.getItems().add(p.getName());
         }
         try {
+
             switch (cbTeams.getSelectionModel().getSelectedItem()) {
+
                 case Three:
                     tblTeams.getColumns().addAll(columnTeam, columnPlayer1, columnPlayer2, columnPlayer3, columnPlayer4, columnPlayer5, columnPlayer6, columnPlayer7, columnPlayer8, columnPlayer9, columnPlayer10);
                     tblTeams.setItems(addPlayersToTeams());
                     cbSelectTeams.getItems().addAll("Team1", "Team2", "Team3");
                     cbPlacingOnTable.getItems().addAll("Player1", "Player2", "Player3" , "Player4", "Player5", "Player6", "Player7", "Player8", "Player9", "Player10");
+                    amountTeams = tblTeams.getItems().size();
+                    //teamsToGroupStage.setAmountOfTeams1(amountTeams);
                     break;
                 case Four:
                     tblTeams.getColumns().addAll(columnTeam, columnPlayer1, columnPlayer2, columnPlayer3, columnPlayer4, columnPlayer5, columnPlayer6, columnPlayer7, columnPlayer8, columnPlayer9, columnPlayer10);
