@@ -34,7 +34,7 @@
       <Label layoutX="921.0" layoutY="181.0" text="Team 6" />
       <Label layoutX="921.0" layoutY="120.0" text="Team 5" />
       <Label fx:id="lblWinner" layoutX="557.0" layoutY="181.0" />
-      <Label layoutX="555.0" layoutY="145.0" text="Winner" textFill="WHITE">
+      <Label layoutX="553.0" layoutY="145.0" text="Winner" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>

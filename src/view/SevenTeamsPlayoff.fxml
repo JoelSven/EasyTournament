@@ -87,7 +87,7 @@
       <Label layoutX="600.0" layoutY="252.0" text="Finals" textFill="WHITE" />
       <Label layoutX="796.0" layoutY="121.0" text="SF-2" textFill="WHITE" />
       <Label layoutX="917.0" layoutY="93.0" text="QF-3" textFill="WHITE" />
-      <Label layoutX="592.0" layoutY="52.0" text="Winner" textFill="WHITE">
+      <Label layoutX="590.0" layoutY="52.0" text="Winner" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

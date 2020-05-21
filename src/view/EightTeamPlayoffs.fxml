@@ -37,7 +37,7 @@
       <Label fx:id="lblQf4Home" layoutX="854.0" layoutY="270.0" text="Team 7" />
       <Label fx:id="lblQf3Away" layoutX="853.0" layoutY="214.0" text="Team 6" />
       <Label fx:id="lblQf3Home" layoutX="854.0" layoutY="154.0" text="Team 5" />
-      <Pane prefHeight="528.0" prefWidth="239.0" style="-fx-background-color: #3b3f41 #3b3f41;">
+      <Pane prefHeight="528.0" prefWidth="226.0" style="-fx-background-color: #3b3f41 #3b3f41;">
          <children>
             <Label layoutX="53.0" layoutY="88.0" text="Quarterfinals 1" textFill="WHITE" />
             <TextField fx:id="tfTeam1" layoutX="8.0" layoutY="111.0" prefHeight="27.0" prefWidth="71.0" promptText="Team 1" />
@@ -88,7 +88,7 @@
             <TextField fx:id="tfSemifinal2Away" layoutX="86.0" layoutY="399.0" prefHeight="27.0" prefWidth="71.0" />
             <TextField fx:id="tfFinalHome" layoutX="8.0" layoutY="462.0" prefHeight="27.0" prefWidth="71.0" />
             <TextField fx:id="tfFinalAway" layoutX="86.0" layoutY="462.0" prefHeight="27.0" prefWidth="71.0" />
-            <Label layoutX="55.0" layoutY="38.0" text="Game Scores" textFill="WHITE">
+            <Label layoutX="64.0" layoutY="38.0" text="Game Scores" textFill="WHITE">
                <font>
                   <Font size="17.0" />
                </font>

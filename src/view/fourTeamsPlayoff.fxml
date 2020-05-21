@@ -44,13 +44,13 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="176.0" layoutY="284.0" mnemonicParsing="false" onAction="#gameSeven" text="OK">
+            <Button layoutX="177.0" layoutY="284.0" mnemonicParsing="false" onAction="#gameSeven" text="OK">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
             <TextField fx:id="tfSemifinal2Home" layoutX="9.0" layoutY="192.0" prefHeight="27.0" prefWidth="71.0" promptText="Team 3" />
             <TextField fx:id="tfSemifinal2Away" layoutX="91.0" layoutY="192.0" prefHeight="27.0" prefWidth="71.0" promptText="Team 4" />
-            <TextField fx:id="tfFinalHome" layoutX="11.0" layoutY="282.0" prefHeight="27.0" prefWidth="71.0" />
+            <TextField fx:id="tfFinalHome" layoutX="9.0" layoutY="282.0" prefHeight="27.0" prefWidth="71.0" />
             <TextField fx:id="tfFinalAway" layoutX="91.0" layoutY="282.0" prefHeight="27.0" prefWidth="71.0" />
             <Label layoutX="56.0" layoutY="45.0" text="Game Scores" textFill="WHITE">
                <font>
